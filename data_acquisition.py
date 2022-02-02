@@ -1,17 +1,10 @@
 from selenium import webdriver
-#import time
-
 import urllib.request
-
 import os
-import threading # To Do
-
 import matplotlib.pyplot as plt
 
 driver = webdriver.Chrome("./chromedriver.exe") # your chrome driver path
 driver.get("https://universe.leagueoflegends.com/ko_KR/champions/")
-
-#time.sleep(3)
 
 image_list = driver.find_elements_by_css_selector('div.image_3oOd')
 
